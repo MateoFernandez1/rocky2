@@ -1,5 +1,6 @@
 const express = require ("express");
 const app= express();
+const db = require("../db/index");
 const PORT= 3000;
 
 app.get("/", (req, res) => {
@@ -7,3 +8,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, ()=> console.log (`Corriendo en ${PORT}`));
+
+
